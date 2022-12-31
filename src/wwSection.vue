@@ -4,7 +4,6 @@
     api-key="l5amtod88464kdqjbn8ysvh8o6xlhda9qvxpqtmpdo111nh4"
     v-model="tinymceText"
     :init="{
-      height: 500,
       menubar: true,
       tinycomments_mode: 'embedded',
       menubar: false,
