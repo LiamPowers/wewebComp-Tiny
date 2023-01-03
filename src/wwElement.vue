@@ -95,7 +95,9 @@ export default {
         this.setValue(value);
       },
     },
-    tinyID: wwLib.wwUtils.getUniqueId() + "TinyMCE",
+  },
+  data() {
+    return { tinyID: wwLib.wwUtils.getUniqueId() + "TinyMCE" };
   },
   setup(props) {
     const { value, setValue } = wwLib.wwVariable.useComponentVariable({
