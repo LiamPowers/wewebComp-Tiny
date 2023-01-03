@@ -1,76 +1,78 @@
 <template>
-  <editor
-    id="test"
-    api-key="l5amtod88464kdqjbn8ysvh8o6xlhda9qvxpqtmpdo111nh4"
-    v-model="tinymceText"
-    :init="{
-      menubar: true,
-      tinycomments_mode: 'embedded',
-      menubar: false,
-      toolbar_mode: 'sliding',
-      branding: false,
-      plugins: [
-        'a11ychecker',
-        'advlist',
-        'advcode',
-        'advtable',
-        'autolink',
-        'checklist',
-        'export',
-        'lists',
-        'link',
-        'image',
-        'charmap',
-        'preview',
-        'anchor',
-        'searchreplace',
-        'visualblocks',
-        'powerpaste',
-        'fullscreen',
-        'formatpainter',
-        'insertdatetime',
-        'media',
-        'table',
-        'help',
-        'wordcount',
-        'mergetags',
-      ],
+  <div>
+    <editor
+      v-bind:id="tinyID"
+      api-key="l5amtod88464kdqjbn8ysvh8o6xlhda9qvxpqtmpdo111nh4"
+      v-model="tinymceText"
+      :init="{
+        menubar: true,
+        tinycomments_mode: 'embedded',
+        menubar: false,
+        toolbar_mode: 'sliding',
+        branding: false,
+        plugins: [
+          'a11ychecker',
+          'advlist',
+          'advcode',
+          'advtable',
+          'autolink',
+          'checklist',
+          'export',
+          'lists',
+          'link',
+          'image',
+          'charmap',
+          'preview',
+          'anchor',
+          'searchreplace',
+          'visualblocks',
+          'powerpaste',
+          'fullscreen',
+          'formatpainter',
+          'insertdatetime',
+          'media',
+          'table',
+          'help',
+          'wordcount',
+          'mergetags',
+        ],
 
-      toolbar:
-        'undo redo | fontfamily fontsize forecolor|  mergetags| bold italic underline | link image| align lineheight | checklist numlist bullist indent outdent',
-      mergetags_list: [
-        {
-          value: 'placeholder@gmail.com',
-          title: 'Email',
-        },
-        {
-          value: 'firstName',
-          title: 'First Name',
-        },
-        {
-          value: '2pac',
-          title: 'Last Name',
-        },
-        {
-          value: 'Mobile',
-          title: 'Mobile',
-        },
-        {
-          value: 'linkedinUrl',
-          title: 'LinkedIn URL',
-        },
-        {
-          value: 'companyName',
-          title: 'Company Name',
-        },
-        {
-          value: 'Title',
-          title: 'Title',
-        },
-      ],
-    }"
-    initial-value="Hello there"
-  />
+        toolbar:
+          'undo redo | fontfamily fontsize forecolor|  mergetags| bold italic underline | link image| align lineheight | checklist numlist bullist indent outdent',
+        mergetags_list: [
+          {
+            value: 'placeholder@gmail.com',
+            title: 'Email',
+          },
+          {
+            value: 'firstName',
+            title: 'First Name',
+          },
+          {
+            value: '2pac',
+            title: 'Last Name',
+          },
+          {
+            value: 'Mobile',
+            title: 'Mobile',
+          },
+          {
+            value: 'linkedinUrl',
+            title: 'LinkedIn URL',
+          },
+          {
+            value: 'companyName',
+            title: 'Company Name',
+          },
+          {
+            value: 'Title',
+            title: 'Title',
+          },
+        ],
+      }"
+      initial-value="Hello there"
+    />
+  </div>
 </template>
 
 <script>
@@ -93,6 +95,7 @@ export default {
         this.setValue(value);
       },
     },
+    tinyID: wwLib.wwUtils.getUniqueId() + "TinyMCE",
   },
   setup(props) {
     const { value, setValue } = wwLib.wwVariable.useComponentVariable({
