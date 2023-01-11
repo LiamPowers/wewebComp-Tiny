@@ -38,35 +38,52 @@
         ],
 
         toolbar:
-          'undo redo | fontfamily fontsize forecolor|  mergetags| bold italic underline | link image| align lineheight | checklist numlist bullist indent outdent',
+          'undo redo | fontfamily fontsize forecolor |emoticons|mergetags| bold italic underline | link image| align lineheight | checklist numlist bullist indent outdent',
         mergetags_list: [
           {
-            value: 'placeholder@gmail.com',
-            title: 'Email',
-          },
-          {
-            value: 'firstName',
-            title: 'First Name',
-          },
-          {
-            value: '2pac',
-            title: 'Last Name',
-          },
-          {
-            value: 'Mobile',
-            title: 'Mobile',
-          },
-          {
-            value: 'linkedinUrl',
-            title: 'LinkedIn URL',
-          },
-          {
-            value: 'companyName',
-            title: 'Company Name',
-          },
-          {
-            value: 'Title',
-            title: 'Title',
+            title: 'Insert Variables',
+            menu: [
+              {
+                value: 'placeholder@gmail.com',
+                title: 'Email',
+              },
+              {
+                value: 'firstName',
+                title: 'First Name',
+              },
+              {
+                value: '2pac',
+                title: 'Last Name',
+              },
+              {
+                value: 'Mobile',
+                title: 'Mobile',
+              },
+              {
+                value: 'linkedinUrl',
+                title: 'LinkedIn URL',
+              },
+              {
+                value: 'companyName',
+                title: 'Company Name',
+              },
+              {
+                value: 'Title',
+                title: 'Title',
+              },
+              {
+                value: 'Salutation',
+                title: 'Salutation',
+              },
+              {
+                value: 'signature',
+                title: 'signature',
+              },
+              {
+                value: 'unsubscribe',
+                title: 'unsubscribe',
+              },
+            ],
           },
         ],
       }"
