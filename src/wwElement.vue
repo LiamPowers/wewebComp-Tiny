@@ -77,11 +77,11 @@
               },
               {
                 value: 'signature',
-                title: 'signature',
+                title: 'Signature',
               },
               {
                 value: 'unsubscribe',
-                title: 'unsubscribe',
+                title: 'Unsubscribe',
               },
             ],
           },
