@@ -44,7 +44,7 @@
             title: 'Insert Variables',
             menu: [
               {
-                value: 'placeholder@gmail.com',
+                value: 'Email',
                 title: 'Email',
               },
               {
@@ -52,7 +52,7 @@
                 title: 'First Name',
               },
               {
-                value: '2pac',
+                value: 'lastName',
                 title: 'Last Name',
               },
               {
@@ -113,9 +113,7 @@ export default {
       },
     },
   },
-  data() {
-    return { tinyID: wwLib.wwUtils.getUniqueId() + "TinyMCE" };
-  },
+  data() {},
   setup(props) {
     const { value, setValue } = wwLib.wwVariable.useComponentVariable({
       uid: props.uid,
