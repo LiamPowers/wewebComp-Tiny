@@ -35,6 +35,7 @@
           'help',
           'wordcount',
           'mergetags',
+          'emoticons',
         ],
 
         toolbar:
