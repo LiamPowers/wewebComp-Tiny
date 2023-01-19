@@ -37,6 +37,7 @@
           'mergetags',
           'emoticons',
         ],
+        content_style: 'body {font-size: 14pt;}',
 
         toolbar:
           'undo redo | fontfamily fontsize forecolor |emoticons|mergetags| bold italic underline | link image| align lineheight | checklist numlist bullist indent outdent',
@@ -45,10 +46,6 @@
             title: 'Insert Variables',
             menu: [
               {
-                value: 'Email',
-                title: 'Email',
-              },
-              {
                 value: 'firstName',
                 title: 'First Name',
               },
@@ -56,14 +53,7 @@
                 value: 'lastName',
                 title: 'Last Name',
               },
-              {
-                value: 'Mobile',
-                title: 'Mobile',
-              },
-              {
-                value: 'linkedinUrl',
-                title: 'LinkedIn URL',
-              },
+
               {
                 value: 'companyName',
                 title: 'Company Name',
@@ -76,10 +66,7 @@
                 value: 'Salutation',
                 title: 'Salutation',
               },
-              {
-                value: 'signature',
-                title: 'Signature',
-              },
+
               {
                 value: 'unsubscribe',
                 title: 'Unsubscribe',
@@ -88,7 +75,6 @@
           },
         ],
       }"
-      initial-value="Hello there"
     />
   </div>
 </template>
